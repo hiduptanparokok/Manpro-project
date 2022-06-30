@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Abouts;
+use App\Portofolios;
+
 use Illuminate\Http\Request;
 
 class MenuController extends Controller
@@ -14,12 +17,15 @@ class MenuController extends Controller
 
     public function about()
     {
-        return view('about');
+        $about = Abouts::latest()->paginate(1)->appends(request()->except('page'));
+
+        return view('about', compact('about'));
     }
 
     public function portofolio()
     {
-        return view('portofolio');
+        $porto = Portofolios::latest()->paginate(9)->appends(request()->except('page'));
+        return view('portofolio', compact('porto'));
     }
 
     public function event()
@@ -36,6 +42,4 @@ class MenuController extends Controller
     {
         return view('contact');
     }
-
-
 }

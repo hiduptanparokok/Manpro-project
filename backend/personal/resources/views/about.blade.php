@@ -12,42 +12,38 @@
           <h2 style="color:white">About</h2>
           <p style="color:white">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
-
+        @forelse($about as $a)  
         <div class="row">
           <div class="col-lg-4">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="/pictabouts/{{ $a->photo }}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Illustrator &amp; UI/UX Designer</h3>
             <p class="fst-italic" style="color:white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              {{ $a->desc }}
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Birthday:</strong> 1 May 1995</li>
-                  <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Website:</strong> www.example.com</li>
-                  <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Phone:</strong> +123 456 7890</li>
-                  <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>City:</strong> City : New York, USA</li>
+                  <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Birthday:</strong> {{ $a->birthday }}</li>
+                  <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Website:</strong>  {{ $a->website}}</li>
+                  <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Phone:</strong>  {{ $a->phone }}</li>
+                  <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>City:</strong>  {{ $a->city }}</li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Age:</strong> 30</li>
-                  <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Degree:</strong> Master</li>
-                  <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>PhEmailone:</strong> email@example.com</li>
-                  <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Freelance:</strong> Available</li>
+                  <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Age:</strong>  {{ $a->age }}</li>
+                  <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Degree:</strong>  {{ $a->degree }}</li>
+                  <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>PhEmailone:</strong> {{ $a->email }}</li>
+                  <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Work:</strong>  {{ $a->work }}</li>
                 </ul>
               </div>
             </div>
-            <p style="color:white">
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-            </p>
           </div>
         </div>
-
+        @empty
+        @endforelse
       </div>
     </section><!-- End About Section -->
 
@@ -67,7 +63,7 @@
             <div class="progress">
               <span class="skill">HTML <i class="val">100%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 

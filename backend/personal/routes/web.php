@@ -19,3 +19,30 @@ Route::get('/portofolio', 'MenuController@portofolio')->name('portofolio');
 Route::get('/event', 'MenuController@event')->name('event');
 Route::get('/schedule', 'MenuController@schedule')->name('schedule');
 Route::get('/contact', 'MenuController@contact')->name('contact');
+
+// Adim routes 
+
+Route::get('/admin/login', 'AdminController@login')->name('login');
+Route::post('/login/admin', 'AdminController@adminLogin')->name('admin.login');
+Route::any('/logout', 'AdminController@logout')->name('admin.logout');
+
+Route::group(["middleware" => [\App\Http\Middleware\LoginSession::class]], function () {
+    Route::get('/admin/dashboard', 'AdminController@admin_dashboard')->name('admin.dashboard');
+
+    // CRUD ABOUTNYA 
+    Route::get('/admin/about', 'AboutController@index')->name('admin.about');
+    Route::get('/admin/create-about', 'AboutController@create')->name('admin.about.create');
+    Route::post('/admin/create-about', 'AboutController@store')->name('admin.about.store');
+    Route::get('/admin/create-about-edit/{about:id}', 'AboutController@edit')->name('admin.about.edit');
+    Route::post('/admin/create-about-edit/{about:id}', 'AboutController@update')->name('admin.about.update');
+    Route::delete('/admin/create-about-delete/{id}', 'AboutController@delete')->name('admin.about.hapus');
+
+    // CRUD PORTO 
+    Route::get('/admin/porto', 'PortofoliosController@index')->name('admin.porto');
+    Route::get('/admin/create-porto', 'PortofoliosController@create')->name('admin.porto.create');
+    Route::post('/admin/create-porto', 'PortofoliosController@store')->name('admin.porto.store');
+    Route::get('/admin/create-porto-edit/{about:id}', 'PortofoliosController@edit')->name('admin.porto.edit');
+    Route::post('/admin/create-porto-edit/{about:id}', 'PortofoliosController@update')->name('admin.porto.update');
+    Route::delete('/admin/create-porto-delete/{id}', 'PortofoliosController@delete')->name('admin.porto.hapus');
+
+});
