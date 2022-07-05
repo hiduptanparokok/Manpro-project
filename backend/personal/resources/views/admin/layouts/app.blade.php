@@ -55,6 +55,10 @@
                         <li>
                             <a href="{{ route('admin.porto') }}">Portofolio</a>
                         </li>
+
+                        <li>
+                            <a href="{{ route('admin.skills') }}">Skills</a>
+                        </li>
                         
                         <li>
                             <a href="component-breadcrumb.html">Perkuliahan</a>

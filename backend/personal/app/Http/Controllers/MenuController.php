@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Abouts;
 use App\Portofolios;
+use App\Skills;
 
 use Illuminate\Http\Request;
 
@@ -18,8 +19,9 @@ class MenuController extends Controller
     public function about()
     {
         $about = Abouts::latest()->paginate(1)->appends(request()->except('page'));
+        $skills = Skills::latest()->paginate(9)->appends(request()->except('page'));
 
-        return view('about', compact('about'));
+        return view('about', compact('about', 'skills'));
     }
 
     public function portofolio()

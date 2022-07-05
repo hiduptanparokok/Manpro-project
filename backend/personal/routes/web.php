@@ -45,4 +45,12 @@ Route::group(["middleware" => [\App\Http\Middleware\LoginSession::class]], funct
     Route::post('/admin/create-porto-edit/{about:id}', 'PortofoliosController@update')->name('admin.porto.update');
     Route::delete('/admin/create-porto-delete/{id}', 'PortofoliosController@delete')->name('admin.porto.hapus');
 
+    // CRUD Skills 
+    Route::get('/admin/skills', 'SkillsController@index')->name('admin.skills');
+    Route::get('/admin/create-skills', 'SkillsController@create')->name('admin.skills.create');
+    Route::post('/admin/create-skills', 'SkillsController@store')->name('admin.skills.store');
+    Route::get('/admin/create-skills-edit/{skills:id}', 'SkillsController@edit')->name('admin.skills.edit');
+    Route::post('/admin/create-skills-edit/{skills:id}', 'SkillsController@update')->name('admin.skills.update');
+    Route::delete('/admin/create-skills-delete/{id}', 'SkillsController@delete')->name('admin.skills.hapus');
+
 });
