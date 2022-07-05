@@ -56,16 +56,15 @@
   </div>
   <div class="container">
   <ul class="card-wrapper">
+  @forelse($event as $e)
       <li class="card-event">
-        <img src="https://seccodeid.com/assets/img/illustrations/logo3.png" alt="film">
-        <h3>A Super Wonderful Headline</h3>
-        <p>Lorem ipsum sit dolor amit</p>
+        <img src="/pictevent/{{ $e->photo }}" alt="film">
+        <h3>{{ $e->title }}</h3>
+        <p>{{ $e->content }}</p>
+        <p><a href="https://{{ $e->link }}">{{ $e->link }}</a></p>
       </li>
-      <li class="card-event">
-        <img src="https://seccodeid.com/assets/img/illustrations/logo3.png" alt="film">
-        <h3>A Super Wonderful Headline</h3>
-        <p>Lorem ipsum sit dolor amit</p>
-      </li>
+  @empty
+  @endforelse
   </ul>
   </div>
 </section><!-- End Portfolio Section -->

@@ -1017,9 +1017,10 @@ section {
 }
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background: black;
 }
 .contact .php-email-form .form-group {
+  background-color: black;
   padding-bottom: 8px;
 }
 .contact .php-email-form .error-message {
@@ -1052,7 +1053,7 @@ section {
   height: 24px;
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
-  border-top-color: #eee;
+  border-top-color: rgb(0, 0, 0);
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }

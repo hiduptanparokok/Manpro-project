@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Abouts;
 use App\Portofolios;
 use App\Skills;
+use App\Events;
 
 use Illuminate\Http\Request;
 
@@ -32,7 +33,8 @@ class MenuController extends Controller
 
     public function event()
     {
-        return view('event');
+        $event = Events::latest()->paginate(9)->appends(request()->except('page'));
+        return view('event', compact('event'));
     }
 
     public function schedule()

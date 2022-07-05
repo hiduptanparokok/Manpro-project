@@ -63,23 +63,13 @@
                         <li>
                             <a href="component-breadcrumb.html">Perkuliahan</a>
                         </li>
-                    </ul>
-                </li>
-                <li class="sidebar-item  has-sub">
 
-                    <a href="#" class='sidebar-link'>
-                        <i data-feather="briefcase" width="20"></i> 
-                        <span>Event</span>
-                    </a>
-
-                    
-                    <ul class="submenu ">
-                        
                         <li>
-                            <a href="component-extra-avatar.html">Buat event</a>
+                            <a href="{{ route('admin.events') }}">Events</a>
                         </li>
                     </ul>
                 </li>
+                
         </ul>
     </div>
     <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>

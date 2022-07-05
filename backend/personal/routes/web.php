@@ -53,4 +53,12 @@ Route::group(["middleware" => [\App\Http\Middleware\LoginSession::class]], funct
     Route::post('/admin/create-skills-edit/{skills:id}', 'SkillsController@update')->name('admin.skills.update');
     Route::delete('/admin/create-skills-delete/{id}', 'SkillsController@delete')->name('admin.skills.hapus');
 
+    // CRUD Events
+    Route::get('/admin/events', 'EventsController@index')->name('admin.events');
+    Route::get('/admin/create-events', 'EventsController@create')->name('admin.events.create');
+    Route::post('/admin/create-events', 'EventsController@store')->name('admin.events.store');
+    Route::get('/admin/create-events-edit/{events:id}', 'EventsController@edit')->name('admin.events.edit');
+    Route::post('/admin/create-events-edit/{events:id}', 'EventsController@update')->name('admin.events.update');
+    Route::delete('/admin/create-events-delete/{id}', 'EventsController@delete')->name('admin.events.hapus');
+
 });
