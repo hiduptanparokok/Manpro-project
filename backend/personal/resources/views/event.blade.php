@@ -44,9 +44,9 @@
 
     .ellipsis{
       overflow-x: hidden; 
-      white-space: -webkit-nowarp; 
+      white-space: nowrap; 
       text-overflow: ellipsis; 
-      display: -webkit-box;
+      display: ;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
     }
@@ -68,7 +68,7 @@
   @forelse($event as $e)
       <li class="card-event">
         <img src="/pictevent/{{ $e->photo }}" alt="film">
-        <h3>{{ $e->title }}</h3>
+        <h3 style="font-weight: bold">{{ $e->title }}</h3>
         <p class="ellipsis">{{ $e->content }}</p>
         <p><a href="https://{{ $e->link }}">{{ $e->link }}</a></p>
       </li>
