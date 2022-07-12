@@ -41,6 +41,16 @@
         grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
         grid-gap: 1.5rem;
     }
+
+    .ellipsis{
+      overflow-x: hidden; 
+      white-space: -webkit-nowarp; 
+      text-overflow: ellipsis; 
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
 </style>
 
 <main id="main">
@@ -54,12 +64,12 @@
     </div>
   </div>
   <div class="container">
-  <ul class="card-wrapper">
+  <ul class="card-wrapper" >
   @forelse($event as $e)
       <li class="card-event">
         <img src="/pictevent/{{ $e->photo }}" alt="film">
         <h3>{{ $e->title }}</h3>
-        <p>{{ $e->content }}</p>
+        <p class="ellipsis">{{ $e->content }}</p>
         <p><a href="https://{{ $e->link }}">{{ $e->link }}</a></p>
       </li>
   @empty
