@@ -6,6 +6,7 @@ use App\Abouts;
 use App\Portofolios;
 use App\Skills;
 use App\Events;
+use App\Materi;
 
 use Illuminate\Http\Request;
 
@@ -39,7 +40,9 @@ class MenuController extends Controller
 
     public function materi()
     {
-        return view('materi');
+        $materi = Materi::latest()->paginate(9)->appends(request()->except('page'));
+
+        return view('materi', compact('materi'));
     }
 
     public function contact()

@@ -59,14 +59,15 @@
                         <li>
                             <a href="{{ route('admin.skills') }}">Skills</a>
                         </li>
-                        
-                        <li>
-                            <a href="component-breadcrumb.html">Perkuliahan</a>
-                        </li>
 
                         <li>
                             <a href="{{ route('admin.events') }}">Events</a>
                         </li>
+
+                        <li>
+                            <a href="{{ route('admin.materi') }}">Materi Perkuliahan</a>
+                        </li>
+
                     </ul>
                 </li>
                 

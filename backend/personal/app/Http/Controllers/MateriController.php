@@ -125,8 +125,11 @@ class MateriController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function delete($id)
     {
-        //
+        $delete = Materi::findOrFail($id);
+        $delete->delete();
+
+        return redirect()->back()->with(['success.down' => 'success.up: Deleted!']);
     }
 }

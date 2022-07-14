@@ -37,15 +37,15 @@
               </tr>
             </thead>
             <tbody>
-            @forelse($materi as $a)  
+            @forelse($materi as $m)  
               <tr>
-                <td class="text-bold-500">{{ $a->title }}</td>
-                <td>{{ $a->desc }}</td>
-                <td><embed type="application/pdf" src="/filemateri/{{ $a->file }}" frameborder="0"></embed></td>
+                <td class="text-bold-500">{{ $m->title }}</td>
+                <td>{{ $m->desc }}</td>
+                <td><embed type="application/pdf" src="/filemateri/{{ $m->file }}" frameborder="0"></embed></td>
                 <td>
                     <div class="d-flex">
-                      <a href="{{ route('admin.materi.edit', $a->id) }}" class="btn btn-warning btn-sm mx-2"><i class="fa fa-edit"></i></a>
-                      <form action="{{ route('admin.materi.hapus', $a->id) }}" method="POST">
+                      <a href="{{ route('admin.materi.edit', $m->id) }}" class="btn btn-warning btn-sm mx-2"><i class="fa fa-edit"></i></a>
+                      <form action="{{ route('admin.materi.hapus', $m->id) }}" method="POST">
                         @csrf
                             @method('delete')
                           <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
