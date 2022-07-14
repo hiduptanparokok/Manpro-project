@@ -9,7 +9,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2 style="color:white">About</h2>
+          <h2 style="color:white">Profile</h2>
         </div>
         @forelse($about as $a)  
         <div class="row">
