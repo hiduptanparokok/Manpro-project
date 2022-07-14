@@ -12,6 +12,7 @@
   <!-- Favicons -->
   <link href="{{ asset('assets/user/img/favicon.png') }}" rel="icon">
   <link href="{{ asset('assets/user/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -49,10 +50,10 @@
       </nav><!-- .navbar -->
 
       <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="https://www.youtube.com/c/WiwitABChannel" class="youtube"><i class="bi bi-youtube"></i></a>
+        <a href="https://web.facebook.com/wiwitab007?_rdc=1&_rdr" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/wiwit_ab/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://id.linkedin.com/in/wiwit-ab-413324175" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
 
     </div>
@@ -66,18 +67,39 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Kelly</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+  <div class="text-center">
+   <h1 style="color:white" class="text-uppercase">Contact</h1> 
+  </div>
+     <!-- Grid container -->
+  <div class="container">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-6 mb-6 mb-md-0">
+        <h2 style="color:white">Wiwit AB</h2>
+
+        <p style="color:white">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+          aliquam voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+
+        <p style="color:white"><i class="bi bi-geo-alt-fill  m-4"></i> Jl. Selokan Mataram Jl. Pogung Dalangan No.16, RT.11/RW.50</p>
+        <p style="color:white"><i class="bi bi-envelope-fill m-4"></i> wiwtpruamazing@gmail.com</p>
+        <p style="color:white"><i class="bi bi-telephone-fill m-4"></i> 0857225567</p>
+
+        </div>
       </div>
     </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3">
+    <a style="color:white">Mild Code Technology @2022</a>
+  </div>
+  <!-- Copyright -->
   </footer><!-- End  Footer -->
 
   <div id="preloader"></div>
