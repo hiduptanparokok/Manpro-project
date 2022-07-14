@@ -37,9 +37,9 @@ class MenuController extends Controller
         return view('event', compact('event'));
     }
 
-    public function schedule()
+    public function materi()
     {
-        return view('schedule');
+        return view('materi');
     }
 
     public function contact()

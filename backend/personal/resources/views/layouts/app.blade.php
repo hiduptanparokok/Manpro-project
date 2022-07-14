@@ -43,7 +43,7 @@
           <li><a href="{{ route('about') }}">Profile</a></li>
           <li><a href="{{ route('portofolio') }}">Portofolio</a></li>
           <li><a href="{{ route('event') }}">Event</a></li>
-          <li><a href="{{ route('schedule') }}">Materi Perkuliahan</a></li>
+          <li><a href="{{ route('materi') }}">Materi Perkuliahan</a></li>
           <li><a href="{{ route('contact') }}">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

@@ -17,10 +17,10 @@ Route::get('/', 'MenuController@index')->name('index');
 Route::get('/about', 'MenuController@about')->name('about');
 Route::get('/portofolio', 'MenuController@portofolio')->name('portofolio');
 Route::get('/event', 'MenuController@event')->name('event');
-Route::get('/schedule', 'MenuController@schedule')->name('schedule');
+Route::get('/materi', 'MenuController@materi')->name('materi');
 Route::get('/contact', 'MenuController@contact')->name('contact');
 
-// Adim routes 
+// Admin routes 
 
 Route::get('/admin/login', 'AdminController@login')->name('login');
 Route::post('/login/admin', 'AdminController@adminLogin')->name('admin.login');
@@ -61,4 +61,11 @@ Route::group(["middleware" => [\App\Http\Middleware\LoginSession::class]], funct
     Route::post('/admin/create-events-edit/{events:id}', 'EventsController@update')->name('admin.events.update');
     Route::delete('/admin/create-events-delete/{id}', 'EventsController@delete')->name('admin.events.hapus');
 
+    // CRUD Materi Perkuliahan
+    Route::get('/admin/materi', 'MateriController@index')->name('admin.materi');
+    Route::get('/admin/create-materi', 'MateriController@create')->name('admin.materi.create');
+    Route::post('/admin/create-materi', 'MateriController@store')->name('admin.materi.store');
+    Route::get('/admin/create-materi-edit/{about:id}', 'MateriController@edit')->name('admin.materi.edit');
+    Route::post('/admin/create-materi-edit/{about:id}', 'MateriController@update')->name('admin.materi.update');
+    Route::delete('/admin/create-materi-delete/{id}', 'MateriController@delete')->name('admin.materi.hapus');
 });
