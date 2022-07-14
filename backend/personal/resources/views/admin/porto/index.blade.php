@@ -20,11 +20,11 @@
         @endif
       </div>
       <div class="card-content">
-        <div class="card-body">
+        <!-- <div class="card-body">
           <p>Similar to tables and dark tables, use the modifier classes <code
               class="highlighter-rouge">.thead-light</code> or <code class="highlighter-rouge">.thead-dark</code> to
             make <code class="highlighter-rouge">&lt;thead&gt;</code>s appear light or dark gray.</p>
-        </div>
+        </div> -->
         <!-- table head dark -->
         <div class="table-responsive">
           <table class="table mb-0">

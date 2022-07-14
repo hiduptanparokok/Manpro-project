@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Layout - Voler Admin Dashboard</title>
+    <title>Admin Dashboard</title>
     
     <link rel="stylesheet" href="{{ asset('assets/admin/assets/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/admin/assets/vendors/perfect-scrollbar/perfect-scrollbar.css') }}">

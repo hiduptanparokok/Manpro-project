@@ -2,6 +2,17 @@
 
 @section('content')
 
+<style>
+  .ellipsis{
+      overflow-x: hidden; 
+      white-space: normal; 
+      text-overflow: ellipsis; 
+      display:-webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+    }
+</style>
+
 <!-- Table head options start -->
 <div class="row" id="table-head">
   <div class="col-12">
@@ -23,11 +34,11 @@
         @endif
       </div>
       <div class="card-content">
-        <div class="card-body">
+        <!-- <div class="card-body">
           <p>Similar to tables and dark tables, use the modifier classes <code
               class="highlighter-rouge">.thead-light</code> or <code class="highlighter-rouge">.thead-dark</code> to
             make <code class="highlighter-rouge">&lt;thead&gt;</code>s appear light or dark gray.</p>
-        </div>
+        </div> -->
         <!-- table head dark -->
         <div class="table-responsive">
           <table class="table mb-0">
