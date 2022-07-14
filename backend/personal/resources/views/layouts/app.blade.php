@@ -40,7 +40,7 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a href="{{ route('index') }}">Home</a></li>
-          <li><a href="{{ route('about') }}">About</a></li>
+          <li><a href="{{ route('about') }}">Profile</a></li>
           <li><a href="{{ route('portofolio') }}">Portofolio</a></li>
           <li><a href="{{ route('event') }}">Event</a></li>
           <li><a href="{{ route('schedule') }}">Materi Perkuliahan</a></li>
