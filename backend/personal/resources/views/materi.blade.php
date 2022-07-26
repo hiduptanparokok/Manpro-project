@@ -60,7 +60,7 @@
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
-      <h2 style="color:white">Events</h2>
+      <h2 style="color:white">Mater Perkuliahan</h2>
     </div>
   </div>
   <div class="container">
