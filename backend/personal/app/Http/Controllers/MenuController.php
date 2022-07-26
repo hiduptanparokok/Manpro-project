@@ -15,7 +15,11 @@ class MenuController extends Controller
 
     public function index()
     {
-        return view('index');
+        $about = Abouts::latest()->paginate(1)->appends(request()->except('page'));
+        $porto = Portofolios::latest()->paginate(9)->appends(request()->except('page'));
+        $event = Events::latest()->paginate(9)->appends(request()->except('page'));
+        $materi = Materi::latest()->paginate(9)->appends(request()->except('page'));
+        return view('index', compact('about', 'porto', 'event', 'materi'));
     }
 
     public function about()
@@ -41,7 +45,6 @@ class MenuController extends Controller
     public function materi()
     {
         $materi = Materi::latest()->paginate(9)->appends(request()->except('page'));
-
         return view('materi', compact('materi'));
     }
 

@@ -55,8 +55,8 @@
 
 <main id="main">
 
-<!-- ======= Portfolio Section ======= -->
-<section id="portfolio" class="portfolio">
+<!-- ======= Event Section ======= -->
+<section id="event" class="event">
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
@@ -68,15 +68,15 @@
   @forelse($event as $e)
       <li class="card-event">
         <img src="/pictevent/{{ $e->photo }}" alt="film">
-        <h3 style="font-weight: bold">{{ $e->title }}</h3>
-        <p class="ellipsis">{{ $e->content }}</p>
-        <p><a href="https://{{ $e->link }}">{{ $e->link }}</a></p>
+        <h3 style="font-weight: bold"> {{ $e->title }}</h3>
+        <p class="ellipsis"> {{ $e->content }}</p>
+        <p><a href="https://{{ $e->link }}">{{ Str::limit($e->link,20) }}</a></p>
       </li>
   @empty
   @endforelse
   </ul>
   </div>
-</section><!-- End Portfolio Section -->
+</section><!-- End Event Section -->
 
 </main><!-- End #main -->
 @endsection

@@ -25,9 +25,9 @@
           <img src="/pictportos/{{ $p->photo }}" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4 style="color:white">{{ $p->title }}</h4>
-            <p style="color:white">{{ $p->desc }}</p>
+            <content style="color:white">{{ $p->desc }}</content>
             <div class="portfolio-links">
-              <a href="/pictportos/{{ $p->photo }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{ $p->title }}"><i class="bx bx-plus"></i></a>
+              <a href="/pictportos/{{ $p->photo }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{ $p->title }}" ><i class="bx bx-plus"></i></a>
               <a href="{{ route('portofolio') }}" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"></a>
             </div>
           </div>
