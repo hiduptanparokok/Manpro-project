@@ -6,7 +6,7 @@
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1 style="color:white">Wiwit AB</h1>
       
-      <h2 style="color:white">Lecturer di Universitas Amikom Yogyakarta
+      <h2 style="color:white">Dosen di Universitas Amikom Yogyakarta
       Daerah Istimewa Yogyakarta, Indonesia.</h2>
       
       <a href="{{ route('about') }}" class="btn-about">See my profile</a>
@@ -134,7 +134,7 @@
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
-      <h2 style="color:white">Events</h2>
+      <h2 style="color:white">Materi Perkuliahan</h2>
     </div>
   </div>
   <div class="container">
