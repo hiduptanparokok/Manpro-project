@@ -17,7 +17,7 @@
             <img src="/pictabouts/{{ $a->photo }}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Illustrator &amp; UI/UX Designer</h3>
+            <h3>Dosen Universitas Amikom Yogyakarta</h3>
             <p class="fst-italic" style="color:white">
               {{ $a->desc }}
             </p>
@@ -47,7 +47,7 @@
     </section><!-- End About Section -->
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills">
+    <!-- <section id="skills" class="skills">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -68,6 +68,6 @@
         @endforelse
         </div>
       </div>
-    </section><!-- End Skills Section -->
+    </section>End Skills Section -->
   </main><!-- End #main -->
   @endsection

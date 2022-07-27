@@ -16,54 +16,13 @@
       </div>
   </section><!-- End Hero -->
 
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
-  
-          <div class="section-title">
-            <h2 style="color:white">Profile</h2>
-          </div>
-          @forelse($about as $a)  
-          <div class="row">
-            <div class="col-lg-4">
-              <img src="/pictabouts/{{ $a->photo }}" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-8 pt-4 pt-lg-0 content">
-              <h3>Illustrator &amp; UI/UX Designer</h3>
-              <p class="fst-italic" style="color:white">
-                {{ $a->desc }}
-              </p>
-              <div class="row">
-                <div class="col-lg-6">
-                  <ul>
-                    <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Birthday:</strong> {{ $a->birthday }}</li>
-                    <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Website:</strong>  {{ $a->website}}</li>
-                    <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Phone:</strong>  {{ $a->phone }}</li>
-                    <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>City:</strong>  {{ $a->city }}</li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul>
-                    <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Age:</strong>  {{ $a->age }}</li>
-                    <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Degree:</strong>  {{ $a->degree }}</li>
-                    <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>PhEmailone:</strong> {{ $a->email }}</li>
-                    <li style="color:white"><i class="bi bi-rounded-right"></i> <strong>Work:</strong>  {{ $a->work }}</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          @empty
-          @endforelse
-        </div>
-      </section><!-- End About Section -->
 
       <!-- ======= Portfolio Section ======= -->
 <section id="portfolio" class="portfolio">
   <div class="container" data-aos="fade-up">
 
     <div class="section-title">
-      <h2 style="color:white">Portfolio</h2>
+      <h2 style="color:white">Portofolio</h2>
     </div>
 
     <div class="row" data-aos="fade-up" data-aos-delay="100">
