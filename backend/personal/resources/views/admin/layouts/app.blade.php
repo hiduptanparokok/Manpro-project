@@ -16,7 +16,7 @@
         <div id="sidebar" class='active'>
             <div class="sidebar-wrapper active">
     <div class="sidebar-header">
-        <img src="{{ asset('assets/admin/assets/images/logo.svg') }}" alt="" srcset="">
+        <h2>Wiwit AB</h2>
     </div>
     <div class="sidebar-menu">
         <ul class="menu">
@@ -59,15 +59,14 @@
                         <li>
                             <a href="{{ route('admin.skills') }}">Skills</a>
                         </li>
+                        
+                        <li>
+                            <a href="component-breadcrumb.html">Perkuliahan</a>
+                        </li>
 
                         <li>
                             <a href="{{ route('admin.events') }}">Events</a>
                         </li>
-
-                        <li>
-                            <a href="{{ route('admin.materi') }}">Materi Perkuliahan</a>
-                        </li>
-
                     </ul>
                 </li>
                 
@@ -109,9 +108,9 @@
                         <li class="dropdown">
                             <a href="#" data-bs-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                                 <div class="avatar me-1">
-                                    <img src="{{ asset('assets/admin/assets/images/avatar/avatar-s-1.png') }}" alt="" srcset="">
+                                    <img src="{{ asset('assets/admin/assets/images/avatar/AvatarWiwid.jpg') }}" alt="" srcset="">
                                 </div>
-                                <div class="d-none d-md-block d-lg-inline-block">Hi, admin</div>
+                                <div class="d-none d-md-block d-lg-inline-block">Wiwit AB</div>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <a class="dropdown-item" href="{{ route('admin.logout') }}"><i data-feather="log-out"></i> Logout</a>
@@ -128,10 +127,10 @@
             <footer>
                 <div class="footer clearfix mb-0 text-muted">
                     <div class="float-start">
-                        <p>2022 &copy; Voler</p>
+                        <p>2022 &copy; MildCoTec</p>
                     </div>
                     <div class="float-end">
-                        <p>Crafted with <span class='text-danger'><i data-feather="heart"></i></span> by <a href="https://saugi.me">Saugi</a></p>
+                        <p>Crafted with <span class='text-danger'><i data-feather="heart"></i></span> by <a>MildCoTec</a></p>
                     </div>
                 </div>
             </footer>

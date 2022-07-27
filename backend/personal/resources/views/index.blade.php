@@ -12,7 +12,7 @@
       <a href="{{ route('about') }}" class="btn-about">See my profile</a>
     </div>
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <img src="{{ asset('assets/user/img/1.jpg') }}" alt="1.jpg">
+      <img src="{{ asset('assets/user/img/Buwiwid.png') }}" alt="Buwiwid.png" style="aspect-ratio: 3/3; padding-right: 120px; width: 120%;">
       </div>
   </section><!-- End Hero -->
 
